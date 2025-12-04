@@ -36,3 +36,4 @@ EXPOSE 8080
 
 # Alapértelmezett parancs nincs; a fejlesztő a terminálból indítja az appot:
 # e.g. python app.py
+
