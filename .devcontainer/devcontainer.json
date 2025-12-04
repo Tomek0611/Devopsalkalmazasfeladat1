@@ -1,0 +1,30 @@
+{
+    // A használandó Dockerfile-ra hivatkozik
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".." // A Dockerfile a projekt gyökerét használja a buildeléshez
+    },
+
+    // A dev containerben használt felhasználó
+    "remoteUser": "vscode",
+
+    // Megnyitandó portok
+    "forwardPorts": [8080],
+
+    // Környezeti változók beállítása a konténer indításakor
+    "remoteEnv": {
+        "FLASK_APP": "HelloWorld.py",
+        "FLASK_ENV": "development"
+    },
+
+    // A konténer indítása után futtatandó parancsok
+    // Ezt PyCharm nem mindig használja, de Dev Containers/Codespaces igen.
+    "postStartCommand": "echo 'Dev Container started successfully.'",
+
+    // Az app futtatási parancsa PyCharm/VS Code Dev Containerben.
+    // Ezt a VS Code Dev Containers veszi figyelembe, PyCharmnál a Run/Debug konfigurációt kell beállítani.
+    "runArgs": [
+        "--name", "devops_app_dev_container",
+        "--init"
+    ]
+}
