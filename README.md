@@ -1,5 +1,5 @@
 Ez a projekt teljes körűen futtatható GitHub Codespaces környezetben.
-A repó tartalmaz egy .devcontainer mappát, amely automatikusan beállítja: a Python 3.11 fejlesztőkörnyezetet, a projekt függőségeit (requirements.txt alapján), a szükséges portokat és környezeti változókat, valamint a konténer indításához szükséges beállításokat.
+A repó tartalmaz, egy .devcontainer mappát, amely automatikusan beállítja: a Python 3.11 fejlesztőkörnyezetet, a projekt függőségeit (requirements.txt alapján), a szükséges portokat és környezeti változókat, valamint a konténer indításához szükséges beállításokat.
 
 .devcontainer/
  -devcontainer.json
